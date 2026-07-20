@@ -20,15 +20,11 @@ header {
     border-radius: 16px 16px 0 0;
 }
 
-/*img[alt="dream team"] {*/
-/*    float: right*/
-/*}*/
-
-
 h1 {
     text-align: center;
     font-size: 3em;
-    padding: 0.5em
+    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 
 nav {
@@ -74,26 +70,31 @@ nav ul li {
 }
 
 img[alt="Friend"] {
-    width: 33.333%;
-    float: left;
-    box-sizing: border-box;
-    border: 2px solid black;
+    width: 100%;
+    display: block;
 }
 
 .left {
     float: left;
     width: 25%;
-    box-shadow: 10px 10px 50px white;
-    margin-right: 10px;
+    margin: 0.3rem 1.2rem 0 0;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
 .left > img {
+    box-shadow: 0.6rem 0.6rem 0.6rem gray;
     width: 100%;
     display: block;
 }
 
 footer {
     clear: both;
+    min-height: 100px;
+    margin-bottom: 20px;
 }
 
 footer .button {
@@ -105,4 +106,5 @@ footer .button {
     font-size: 1em;
     padding: 0.3em 0.5em;
     border-radius: 5px;
+    margin-left: 20px;
 }
