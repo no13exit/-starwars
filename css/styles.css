@@ -8,13 +8,10 @@
 body {
     background-image: url("../img/sky.jpg");
     font-family: "Poller One", cursive;
-    color: #eedb00;
+    color: var(--primary-color);
     background-attachment: fixed;
 }
 
-header, footer {
-    background-color: rgba(60, 69, 67, 0.6);
-}
 
 header {
     border-radius: 16px 16px 0 0;
@@ -23,6 +20,15 @@ header {
 /*img[alt="dream team"] {*/
 /*    float: right*/
 /*}*/
+
+:root {
+    --primary-color: #eedb00;
+    --secondary-color: 60, 69, 67;
+}
+
+header, footer {
+    background-color: rgba(var(--secondary-color), 0.6);
+}
 
 
 h1 {
@@ -56,7 +62,7 @@ nav ul li {
 .right {
     float: right;
     width: 50%;
-    border: 1px solid #eedb00;
+    border: 1px solid var(--primary-color);
     border-radius: 0 0 15px 15px;
     overflow: hidden;
     margin-left: 5px;
